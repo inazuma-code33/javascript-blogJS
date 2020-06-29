@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Variables */
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.856);
+  font-family: "Source Sans Pro", sans-serif;
+  color: #e2bd6e;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
+.section-title span {
+  text-transform: none;
+  font-weight: 400;
+  color: #f3e4c3;
+}
+
+/* Layout */
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.sidebar {
+  -ms-flex: 1 0 0px;
+      flex: 1 0 0;
+}
+
+.posts {
+  -ms-flex: 2 0 0px;
+      flex: 2 0 0;
+}
+
+.sidebar,
+.posts {
+  margin-right: 10px;
+  padding: 40px;
+  border: 1px solid #e2bd6e;
+  border-radius: 5px;
+}
+
+/* Logo */
+.logo {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-size: 104px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Lists */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list a {
+  text-decoration: none;
+  color: #e2bd6e;
+}
+
+.list .active {
+  font-weight: bold;
+}
+
+.list-horizontal li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* Authors */
+.authors li {
+  margin-bottom: 12px;
+}
+
+/* Post */
+.post {
+  display: none;
+}
+
+.post.active {
+  display: block;
+  animation-name: appear;
+  animation-duration: 2s;
+}
+
+.post-author a {
+  text-decoration: none;
+  color: #e2bd6e;
+  font-style: italic;
+}
+
+.post-author li {
+  list-style-type: none;
+}
+
+.post-tags {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-tags p {
+  margin: 0 10px 0 0;
+}
+
+/* Tags */
+.list.tags li {
+  display: inline-block;
+  padding: 0 20px 20px 0;
+}
+
+.tag-size-1 {
+  font-size: 80%;
+}
+
+.tag-size-2 {
+  font-size: 100%;
+}
+
+.tag-size-3 {
+  font-size: 110%;
+}
+
+.tag-size-4 {
+  font-size: 120%;
+}
+/*# sourceMappingURL=style.css.map */
