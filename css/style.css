@@ -17,9 +17,9 @@
 }
 
 body {
-  background: rgba(0, 0, 0, 0.856);
+  background: rgba(94, 66, 5, 0.123);
   font-family: "Source Sans Pro", sans-serif;
-  color: #e2bd6e;
+  color: rgba(17, 33, 255, 0.534);
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
@@ -40,7 +40,7 @@ body {
 .section-title span {
   text-transform: none;
   font-weight: 400;
-  color: #f3e4c3;
+  color: rgba(0, 0, 2, 0.952);
 }
 
 /* Layout */
@@ -64,7 +64,7 @@ body {
 .posts {
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid #e2bd6e;
+  border: 1px solid rgba(0, 0, 2, 0.952);
   border-radius: 5px;
 }
 
@@ -86,7 +86,7 @@ body {
 
 .list a {
   text-decoration: none;
-  color: #e2bd6e;
+  color: rgba(0, 0, 2, 0.952);
 }
 
 .list .active {
@@ -116,7 +116,7 @@ body {
 
 .post-author a {
   text-decoration: none;
-  color: #e2bd6e;
+  color: rgba(0, 0, 2, 0.952);
   font-style: italic;
 }
 

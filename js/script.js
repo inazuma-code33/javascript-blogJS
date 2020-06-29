@@ -34,16 +34,16 @@ const opt = {
 function titleClickHandler(event) {
   event.preventDefault();
   const clickedElement = this;
-  // console.log('link was clicked');
+  // console.log('link was clicked'); chyba, ze, to tylko funkacja rozwijania
   /* remove class 'active' from all article links  */
   const activeLinks = document.querySelectorAll('.titles a.active');
 
   for (let activeLink of activeLinks) {
     activeLink.classList.remove('active');
-    // console.log('active link was: ', activeLink);
+    // console.log('active link was: ', activeLink); Menu tryb ?
   }
 
-  /* add class 'active' to the clicked link */
+  /* add class 'active' to the clicked link - Hover */ 
   // console.log('clickedElement:', clickedElement);
   clickedElement.classList.add('active');
 
@@ -68,7 +68,7 @@ function titleClickHandler(event) {
 
 function generateTitleList(customSelector = '') {
   // console.log('generateTitleList!');
-  /* remove all links in left column */
+  /* remove all links in left column- Lewa kolumna */
   const titleList = document.querySelector(opt.TitleListSelector);
   titleList.innerHTML = '';
   // console.log('titleList is: ', titleList);
